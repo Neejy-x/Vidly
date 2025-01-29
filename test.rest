@@ -1,0 +1,25 @@
+GET http://localhost:3110
+
+###
+POST http://localhost:3110/api/auth
+Content-Type: application/json
+
+{
+  
+  "email": "Nijibolutife@gmail.com",
+  "password": "12345"
+}
+
+###
+GET http://localhost:3110/api/movies
+
+###
+PATCH http://localhost:3110/api/movies/679359f23397c6d018e8c7f7
+Content-Type: application/json
+
+{
+  "numberInStock": 25
+}
+
+###
+DELETE http://localhost:3110/api/movies/67935a20ea41aebd493ca752
