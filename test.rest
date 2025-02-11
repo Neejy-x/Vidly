@@ -1,15 +1,16 @@
-GET http://localhost:3110
+GET http://localhost:3110/api/users/rentals
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2E1NDYwM2EyZTljODg2NWEyZDM0NTgiLCJuYW1lIjoiQWRlcm9tb2xxIEFkZWJheW8iLCJlbWFpbCI6ImFkZXJvbW9sYUBnbWFpbC5jb20iLCJwaG9uZSI6IjA5MTg3NjU0MzIxIiwiYWdlIjoyMCwiaXNHb2xkIjpmYWxzZSwiX192IjowLCJpYXQiOjE3MzkxOTYyMDN9.oCnE2POibNtU_ZPrJ7nQxAKH4RZ4ni5npjYuCjQuLyk
+
 
 ###
 POST http://localhost:3110/api/auth
 Content-Type: application/json
 
+
 {
-  
-  "email": "Nijibolutife@gmail.com",
+  "email": "aderomola@gmail.com",
   "password": "12345"
 }
-
 ###
 GET http://localhost:3110/api/movies
 

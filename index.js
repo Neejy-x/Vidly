@@ -9,8 +9,16 @@ const customers = require('./routes/customer')
 const rentals = require('./routes/rentals')
 const users = require('./routes/users')
 const auth = require('./routes/auth')
+require('dotenv').config()
 
 
+
+
+
+// if(!process.env.ACCESS_TOKEN_SECRET){
+//   console.error('FATAL ERROR: jwtPrivateKey not defined..')
+//   process.exit(1)
+// }
 
 mongoose.connect('mongodb://localhost/vidly')
   .then(()=>console.log('Connected to MongoDB...'))
