@@ -2,7 +2,6 @@ const express = require('express')
 const {User} = require('../models/user')
 const router = express.Router()
 const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
 const _ = require('lodash')
 const Joi = require('joi')
 
@@ -22,10 +21,10 @@ router.post('/', async(req, res)=>{
     let isMatch = await bcrypt.compare(password, user.password)
     if(!isMatch ) return res.status(400).json({message: "Invalid email or password"})
     
-      const token = jwt.sign(_.omit(user.toObject(), ['password']), process.env.ACCESS_TOKEN_SECRET);
+      
 
-
-      res.status(200).json({Message: `Welcome ${user.name}`, user: {name: user.name, email: user.email, token: token}})
+      const token = user.generateAuthToken()
+      res.header('x-auth-token', token).send({Message: `Welcome ${user.name}`, user: {name: user.name, email: user.email}})
     
   }catch(e){
     res.status(500).json({messgae: "Internal Server Error", error: e.message})

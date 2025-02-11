@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt')
 const {User, validateUser} = require('../models/user')
 const {Rental} = require('../models/rentals')
 const jwt = require('jsonwebtoken')
+const auth = require('../middleware/auth')
 
 
 router.post('/', async(req, res)=>{
@@ -39,9 +40,9 @@ try{
 
 
 
-router.get('/rentals', authToken, async(req, res)=>{
+router.get('/rentals', auth, async(req, res)=>{
   try{
-    const rentals= await Rental.find({'customer.email': req.user.email})
+    const rentals= await Rental.findById(req.user._id)
     if(!rentals) return res.status(404).send('This user has no active rentals')
 
     res.send(rentals)
@@ -50,17 +51,16 @@ router.get('/rentals', authToken, async(req, res)=>{
   }
 })
 
+router.get('/me', auth, async(req, res)=>{
+  try{
+    const user = await User.findById(req.user._id).select('-password -_id -__v')
+    res.send(user)
+  }catch(e){
+    res.status(500).send({message: "Internal Server error:", error: e.message})
+  }
+})
 
 
-function authToken(req, res, next){
-  const authHeader = req.headers['authorization']
-  const token = authHeader && authHeader.split(' ')[1]
-  if(!token) return res.sendStatus(401)
-  
-    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user)=>{
-      if(err) return res.sendStatus(403)
-      req.user = user
-      next()
-    })
-}
+
+
 module.exports = router

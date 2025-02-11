@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const {Genre} = require('../models/genre')
+const auth = require('../middleware/auth')
+const admin = require('../middleware/admin')
 
 
 router.get('/', async (req, res)=>{
@@ -12,7 +14,7 @@ try{
 }})
 
 
-router.post('/', async(req, res)=>{
+router.post('/', auth, async(req, res)=>{
   try{
     const {name, description} = req.body
     const genre = await Genre.create({
@@ -25,7 +27,7 @@ router.post('/', async(req, res)=>{
   }
 })
 
-router.delete('/:id', async(req, res)=>{
+router.delete('/:id',[auth, admin], async(req, res)=>{
   try{
     const id = req.params.id
     const genre = await Genre.findOneAndDelete(id)
