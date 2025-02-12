@@ -10,7 +10,6 @@ const Joi = require('joi')
 
 router.post('/', async(req, res)=>{
   const {email, password}= req.body
-  try{
     const {error} = validate(req.body)
     if(error) return res.status(400).json({message: error.details[0].message})
 
@@ -25,10 +24,6 @@ router.post('/', async(req, res)=>{
 
       const token = user.generateAuthToken()
       res.header('x-auth-token', token).send({Message: `Welcome ${user.name}`, user: {name: user.name, email: user.email}})
-    
-  }catch(e){
-    res.status(500).json({messgae: "Internal Server Error", error: e.message})
-  }
 } )
 
 

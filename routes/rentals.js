@@ -10,13 +10,13 @@ router.get('/', async(req, res)=>{
   try{const rentals = await Rental.find()
   res.json(rentals)
 }catch(e){
-  res.status(500).json({message: 'Something went wrong on the server', error: e.message})
+  next(e)
 }})
 
 
 .post('/', async(req, res)=>{
   const {customerId, movieId, dateOut} = req.body
-  try{
+
     const {error} = validateRental(req.body)
     if(error) return res.status(400).send(error.details.map(err=> err.message))
     
@@ -50,9 +50,6 @@ router.get('/', async(req, res)=>{
       movie.numberInStock --
       movie.save()
       res.status(200).json({message: 'Successfully created a Rental', rental})
-  }catch(e){
-    res.status(500).json({message: 'Something went wrong on the Server', error: e.message})
-  }
 
 })
 

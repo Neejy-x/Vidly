@@ -1,3 +1,4 @@
+require('express-async-errors')
 const express = require('express')
 const app = express()
 const Joi = require('joi')
@@ -10,6 +11,7 @@ const rentals = require('./routes/rentals')
 const users = require('./routes/users')
 const auth = require('./routes/auth')
 require('dotenv').config()
+const errorHandler = require('./middleware/error')
 
 
 
@@ -35,6 +37,7 @@ app.use('/api/customers', customers)
 app.use('/api/rentals', rentals)
 app.use('/api/users/', users)
 app.use('/api/auth', auth)
+app.use(errorHandler)
 
 
 const PORT = 3110

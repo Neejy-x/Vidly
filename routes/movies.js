@@ -7,7 +7,7 @@ const {validateMovie} = require('../models/movies')
 const router = express.Router()
 
 
-router.post('/', async (req, res)=>{
+router.post('/', async (req, res, next)=>{
   const {genreId, numberInStock, dailyRentalRate} = req.body
   try{
 
@@ -31,8 +31,8 @@ movie = await movie.save()
 res.json(movie)
 
 }catch(e){
-    console.log(e.message)
-  }
+  next(e)
+}
 })
 .get('/', getMovies)
 
@@ -43,7 +43,7 @@ router.get('/:id', findMovie, async(req, res)=>{
 })
 
 
-.patch('/:id', findMovie, async(req, res)=>{
+.patch('/:id', findMovie, async(req, res, next)=>{
   const {title, genreId, numberInStock, dailyRentalRate} = req.body
   
   try{
@@ -60,17 +60,13 @@ router.get('/:id', findMovie, async(req, res)=>{
    await  movie.save()
     res.json(movie)
   }catch(e){
-    res.status(500).json({message: "Internal Server Error", error: e.message})
+    next(e)
   }
 })
 
 .delete('/:id', findMovie, async(req, res)=>{
   const movie = res.movie
-  try{
     await movie.deleteOne()
     res.json({message: "Movie Deleted", movie})
-  }catch(e){
-    res.status(500).json({message: "Internal Server Error", error: e.message})
-  }
 })
 module.exports = router
