@@ -1,0 +1,145 @@
+{
+  error: Error: Winston Test Error
+      at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28
+      at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)
+      at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)
+      at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)
+      at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10),
+  level: 'error',
+  message: 'unhandledRejection: Winston Test Error\n' +
+    'Error: Winston Test Error\n' +
+    '    at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28\n' +
+    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10)',
+  stack: 'Error: Winston Test Error\n' +
+    '    at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28\n' +
+    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)\n' +
+    '    at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)\n' +
+    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15\n' +
+    '    at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)\n' +
+    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10)',
+  rejection: true,
+  date: 'Thu Feb 13 2025 15:33:03 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 21847,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 51560448,
+      heapTotal: 40615936,
+      heapUsed: 28997512,
+      external: 20525528,
+      arrayBuffers: 18273149
+    }
+  },
+  os: {
+    loadavg: [ 2.689453125, 3.080078125, 3.3935546875 ],
+    uptime: 1649625
+  },
+  trace: [
+    {
+      column: 28,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js',
+      function: 'newFn',
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js',
+      function: 'next',
+      line: 149,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js',
+      function: 'Route.dispatch',
+      line: 119,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 20,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js',
+      function: 'newFn',
+      line: 16,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
+      function: 'Function.process_params',
+      line: 346,
+      method: 'process_params',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
+      function: 'next',
+      line: 280,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T14:33:03.364Z'
+}

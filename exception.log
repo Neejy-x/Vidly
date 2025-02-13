@@ -1,0 +1,560 @@
+{
+  error: ReferenceError: app is not defined
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:32:1)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Module.load (node:internal/modules/cjs/loader:1208:32)
+      at Module._load (node:internal/modules/cjs/loader:1024:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: app is not defined\n' +
+    'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:32:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:32:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Thu Feb 13 2025 15:54:07 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 23615,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 88457216,
+      heapTotal: 56606720,
+      heapUsed: 26827664,
+      external: 20496661,
+      arrayBuffers: 18262773
+    }
+  },
+  os: {
+    loadavg: [ 3.8115234375, 2.78173828125, 2.794921875 ],
+    uptime: 1650889
+  },
+  trace: [
+    {
+      column: 1,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 174,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T14:54:07.538Z'
+}
+{
+  error: TypeError: app.get is not a function
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:26:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Module.load (node:internal/modules/cjs/loader:1208:32)
+      at Module._load (node:internal/modules/cjs/loader:1024:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: app.get is not a function\n' +
+    'TypeError: app.get is not a function\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:26:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'TypeError: app.get is not a function\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:26:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Thu Feb 13 2025 15:56:10 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 23877,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 75612160,
+      heapTotal: 34029568,
+      heapUsed: 21560512,
+      external: 20496661,
+      arrayBuffers: 18262773
+    }
+  },
+  os: {
+    loadavg: [ 3.12548828125, 2.86767578125, 2.82275390625 ],
+    uptime: 1651012
+  },
+  trace: [
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 26,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 174,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T14:56:10.248Z'
+}
+{
+  error: ReferenceError: app is not defined
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:2:29)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Module.load (node:internal/modules/cjs/loader:1208:32)
+      at Module._load (node:internal/modules/cjs/loader:1024:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: app is not defined\n' +
+    'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:2:29)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:2:29)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Thu Feb 13 2025 16:01:01 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 25020,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 88080384,
+      heapTotal: 56393728,
+      heapUsed: 25609672,
+      external: 20457814,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 2.86767578125, 3.12841796875, 2.97900390625 ],
+    uptime: 1651303
+  },
+  trace: [
+    {
+      column: 29,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 174,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T15:01:01.408Z'
+}
+{
+  error: ReferenceError: app is not defined
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:29)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Module.load (node:internal/modules/cjs/loader:1208:32)
+      at Module._load (node:internal/modules/cjs/loader:1024:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: app is not defined\n' +
+    'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:29)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'ReferenceError: app is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:29)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Thu Feb 13 2025 16:01:03 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 25050,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 87425024,
+      heapTotal: 56393728,
+      heapUsed: 25600800,
+      external: 20457814,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 2.86767578125, 3.12841796875, 2.97900390625 ],
+    uptime: 1651305
+  },
+  trace: [
+    {
+      column: 29,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 174,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T15:01:03.776Z'
+}
+{
+  error: ReferenceError: ule is not defined
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:11:1)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Module.load (node:internal/modules/cjs/loader:1208:32)
+      at Module._load (node:internal/modules/cjs/loader:1024:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: ule is not defined\n' +
+    'ReferenceError: ule is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:11:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'ReferenceError: ule is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:11:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Thu Feb 13 2025 16:02:35 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 25468,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 87359488,
+      heapTotal: 56672256,
+      heapUsed: 26365656,
+      external: 20457814,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 4.357421875, 3.40380859375, 3.08740234375 ],
+    uptime: 1651397
+  },
+  trace: [
+    {
+      column: 1,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 11,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 174,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T15:02:35.598Z'
+}

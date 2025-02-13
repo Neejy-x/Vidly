@@ -4,7 +4,7 @@ x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2E1NDYwM2EyZTljO
 
 
 ###
-POST http://localhost:3110/api/auth
+POST http://localhost:3110/api/genres
 Content-Type: application/json
 
 
@@ -15,7 +15,7 @@ Content-Type: application/json
   "password": "12345"
 }
 ###
-GET http://localhost:3110/api/movies
+GET http://localhost:3110/api/genres
 
 ###
 PATCH http://localhost:3110/api/movies/679359f23397c6d018e8c7f7
