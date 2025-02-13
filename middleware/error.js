@@ -4,14 +4,15 @@ const winston = require('winston')
 
 const {combine, timestamp, json, prettyPrint} = winston.format
 const logger = winston.createLogger({
-  level: 'error',
+  level: 'info',
   format:combine(
     timestamp(),
     json(),
-    prettyPrint()
+    prettyPrint(),
+    winston.format.colorize({all: true})
   ),
   transports:[
-    new winston.transports.File({filename: 'vidly.log', level: 'error'}),
+    new winston.transports.File({filename: 'vidly.log', level: 'info'}),
     new winston.transports.Console()
   ],
   exceptionHandlers: [
@@ -25,8 +26,10 @@ const logger = winston.createLogger({
 })
 
 
-module.exports = (err, req, res, next)=>{
-  logger.error('Something went wrong',err.message, err.stack)
+ const errorHandler=(err, req, res, next)=>{
+  logger.error('Something went wrong',err.message)
   res.status(500).send('Inernal Server Error', err.message)
 }
+
+module.exports = {errorHandler, logger}
   

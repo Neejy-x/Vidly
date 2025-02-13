@@ -5,7 +5,7 @@ const customers = require('../routes/customer')
 const rentals = require('../routes/rentals')
 const users = require('../routes/users')
 const auth = require('../routes/auth')
-const errorHandler = require('../middleware/error')
+const {errorHandler} = require('../middleware/error')
 
 
 module.exports = (app)=>{

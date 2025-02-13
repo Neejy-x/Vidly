@@ -1,43 +1,43 @@
 {
-  error: Error: Winston Test Error
-      at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28
-      at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)
-      at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)
-      at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)
-      at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)
-      at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)
-      at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)
-      at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15
-      at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)
-      at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10),
+  error: MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+      at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+      at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)
+      at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)
+      at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)
+      at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)
+      at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)
+      at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10),
   level: 'error',
-  message: 'unhandledRejection: Winston Test Error\n' +
-    'Error: Winston Test Error\n' +
-    '    at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28\n' +
-    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
-    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)\n' +
-    '    at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)\n' +
-    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
-    '    at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15\n' +
-    '    at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)\n' +
-    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10)',
-  stack: 'Error: Winston Test Error\n' +
-    '    at /Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js:9:28\n' +
-    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
-    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:149:13)\n' +
-    '    at Route.dispatch (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js:119:3)\n' +
-    '    at newFn (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js:16:20)\n' +
-    '    at Layer.handle [as handle_request] (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js:95:5)\n' +
-    '    at /Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:284:15\n' +
-    '    at Function.process_params (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:346:12)\n' +
-    '    at next (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js:280:10)',
+  message: 'unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
   rejection: true,
-  date: 'Thu Feb 13 2025 15:33:03 GMT+0100 (West Africa Standard Time)',
+  date: 'Thu Feb 13 2025 22:08:24 GMT+0100 (West Africa Standard Time)',
   process: {
-    pid: 21847,
+    pid: 32489,
     uid: 501,
     gid: 20,
     cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
@@ -48,98 +48,678 @@
       '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
     ],
     memoryUsage: {
-      rss: 51560448,
-      heapTotal: 40615936,
-      heapUsed: 28997512,
-      external: 20525528,
-      arrayBuffers: 18273149
+      rss: 86949888,
+      heapTotal: 56918016,
+      heapUsed: 26467872,
+      external: 20476305,
+      arrayBuffers: 18262463
     }
   },
   os: {
-    loadavg: [ 2.689453125, 3.080078125, 3.3935546875 ],
-    uptime: 1649625
+    loadavg: [ 5.26025390625, 3.7138671875, 3.37451171875 ],
+    uptime: 1673346
   },
   trace: [
     {
-      column: 28,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/routes/genres.js',
-      function: null,
-      line: 9,
+      column: 19,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js',
+      function: 'new ConnectionString',
+      line: 86,
       method: null,
       native: false
     },
     {
-      column: 20,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js',
-      function: 'newFn',
-      line: 16,
+      column: 17,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js',
+      function: 'parseOptions',
+      line: 185,
       method: null,
       native: false
     },
     {
-      column: 5,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js',
-      function: 'Layer.handle [as handle_request]',
-      line: 95,
-      method: 'handle [as handle_request]',
-      native: false
-    },
-    {
-      column: 13,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js',
-      function: 'next',
-      line: 149,
+      column: 63,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js',
+      function: 'new MongoClient',
+      line: 53,
       method: null,
       native: false
     },
     {
-      column: 3,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/route.js',
-      function: 'Route.dispatch',
-      line: 119,
-      method: 'dispatch',
+      column: 14,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js',
+      function: 'NativeConnection.createClient',
+      line: 312,
+      method: 'createClient',
       native: false
     },
     {
-      column: 20,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express-async-errors/index.js',
-      function: 'newFn',
-      line: 16,
-      method: null,
-      native: false
-    },
-    {
-      column: 5,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/layer.js',
-      function: 'Layer.handle [as handle_request]',
-      line: 95,
-      method: 'handle [as handle_request]',
+      column: 34,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.openUri',
+      line: 1016,
+      method: 'openUri',
       native: false
     },
     {
       column: 15,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
-      function: null,
-      line: 284,
-      method: null,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.connect',
+      line: 446,
+      method: 'connect',
       native: false
     },
     {
       column: 12,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
-      function: 'Function.process_params',
-      line: 346,
-      method: 'process_params',
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
       native: false
     },
     {
       column: 10,
-      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/express/lib/router/index.js',
-      function: 'next',
-      line: 280,
-      method: null,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
       native: false
     }
   ],
-  timestamp: '2025-02-13T14:33:03.364Z'
+  timestamp: '2025-02-13T21:08:24.935Z'
+}
+{
+  error: MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+      at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+      at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)
+      at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)
+      at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)
+      at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)
+      at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)
+      at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10),
+  level: 'error',
+  message: 'unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  rejection: true,
+  date: 'Thu Feb 13 2025 22:08:29 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 32557,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 88686592,
+      heapTotal: 56655872,
+      heapUsed: 26650712,
+      external: 20476305,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 5.3193359375, 3.75146484375, 3.3896484375 ],
+    uptime: 1673351
+  },
+  trace: [
+    {
+      column: 19,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js',
+      function: 'new ConnectionString',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js',
+      function: 'parseOptions',
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 63,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js',
+      function: 'new MongoClient',
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js',
+      function: 'NativeConnection.createClient',
+      line: 312,
+      method: 'createClient',
+      native: false
+    },
+    {
+      column: 34,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.openUri',
+      line: 1016,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.connect',
+      line: 446,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T21:08:29.996Z'
+}
+{
+  error: MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+      at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+      at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)
+      at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)
+      at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)
+      at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)
+      at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)
+      at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10),
+  level: 'error',
+  message: 'unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  rejection: true,
+  date: 'Thu Feb 13 2025 22:08:31 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 32572,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 88883200,
+      heapTotal: 56655872,
+      heapUsed: 26648952,
+      external: 20476305,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 5.3193359375, 3.75146484375, 3.3896484375 ],
+    uptime: 1673353
+  },
+  trace: [
+    {
+      column: 19,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js',
+      function: 'new ConnectionString',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js',
+      function: 'parseOptions',
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 63,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js',
+      function: 'new MongoClient',
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js',
+      function: 'NativeConnection.createClient',
+      line: 312,
+      method: 'createClient',
+      native: false
+    },
+    {
+      column: 34,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.openUri',
+      line: 1016,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.connect',
+      line: 446,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T21:08:31.493Z'
+}
+{
+  error: MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+      at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+      at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)
+      at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)
+      at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)
+      at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)
+      at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)
+      at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10),
+  level: 'error',
+  message: 'unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  rejection: true,
+  date: 'Thu Feb 13 2025 22:08:33 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 32594,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 88686592,
+      heapTotal: 56655872,
+      heapUsed: 26495360,
+      external: 20476305,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 5.21337890625, 3.75537109375, 3.39306640625 ],
+    uptime: 1673355
+  },
+  trace: [
+    {
+      column: 19,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js',
+      function: 'new ConnectionString',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js',
+      function: 'parseOptions',
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 63,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js',
+      function: 'new MongoClient',
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js',
+      function: 'NativeConnection.createClient',
+      line: 312,
+      method: 'createClient',
+      native: false
+    },
+    {
+      column: 34,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.openUri',
+      line: 1016,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.connect',
+      line: 446,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T21:08:33.159Z'
+}
+{
+  error: MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+      at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+      at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)
+      at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)
+      at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)
+      at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)
+      at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)
+      at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)
+      at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10),
+  level: 'error',
+  message: 'unhandledRejection: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  stack: 'MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"\n' +
+    '    at new ConnectionString (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n' +
+    '    at parseOptions (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js:185:17)\n' +
+    '    at new MongoClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js:53:63)\n' +
+    '    at NativeConnection.createClient (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:312:14)\n' +
+    '    at NativeConnection.openUri (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js:1016:34)\n' +
+    '    at Mongoose.connect (/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js:446:15)\n' +
+    '    at module.exports (/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js:6:12)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/CwmPracticals/Vidly/index.js:3:30)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  rejection: true,
+  date: 'Thu Feb 13 2025 22:09:15 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 32670,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/CwmPracticals/Vidly',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.13.0',
+    argv: [
+      '/usr/local/bin/node',
+      '/Users/mac/Desktop/CwmPracticals/Vidly/index.js'
+    ],
+    memoryUsage: {
+      rss: 78954496,
+      heapTotal: 56655872,
+      heapUsed: 26387432,
+      external: 20476305,
+      arrayBuffers: 18262463
+    }
+  },
+  os: {
+    loadavg: [ 4.14453125, 3.6337890625, 3.36181640625 ],
+    uptime: 1673397
+  },
+  trace: [
+    {
+      column: 19,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb-connection-string-url/lib/index.js',
+      function: 'new ConnectionString',
+      line: 86,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/connection_string.js',
+      function: 'parseOptions',
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 63,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongodb/lib/mongo_client.js',
+      function: 'new MongoClient',
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js',
+      function: 'NativeConnection.createClient',
+      line: 312,
+      method: 'createClient',
+      native: false
+    },
+    {
+      column: 34,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/connection.js',
+      function: 'NativeConnection.openUri',
+      line: 1016,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 15,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.connect',
+      line: 446,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/startup/database.js',
+      function: 'module.exports',
+      line: 6,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 30,
+      file: '/Users/mac/Desktop/CwmPracticals/Vidly/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2025-02-13T21:09:15.277Z'
 }
